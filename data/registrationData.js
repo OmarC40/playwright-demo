@@ -11,9 +11,9 @@ export const registrationData = {
 
   website: 'https://example.com',
 
-  businessType: 'Retail',
+  businessType: 'Wholesale',
 
-  hearAboutUs: 'Google',
+  hearAboutUs: 'Instagram',
 
   phone: '5551234567',
 

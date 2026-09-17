@@ -18,7 +18,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 
-test('REG-001 New customer registration, all valid fields', async () => {
+test.only('REG-001 New customer registration, all valid fields', async () => {
 
   await test.step('Open customer registration', async () => {
 
@@ -71,6 +71,8 @@ test('REG-001 New customer registration, all valid fields', async () => {
   await test.step('Create customer account', async () => {
 
     await registrationPage.createAccount();
+
+    //await registrationPage.expectRegistrationSuccess();
 
   });
 
