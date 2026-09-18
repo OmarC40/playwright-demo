@@ -60,7 +60,7 @@ export class RegistrationPage {
     this.keepSignedInCheckbox = page.locator('#remember_meKLuHvKC2rU');
 
     // CONTINUE button
-    this.continueButton = page.getByRole('button', { name: 'Continue' });
+    this.continueButton = page.getByTitle('Continue')
 
     // Final CREATE AN ACCOUNT button
     this.createAccountButton = page.getByRole('button', { name: 'Create an Account' });
@@ -273,7 +273,7 @@ export class RegistrationPage {
 
   async createAccount() {
     console.log("Hola")
-    //await this.createAccountButton.click();
+    await this.createAccountButton.click();
 
   }
 
