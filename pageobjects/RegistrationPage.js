@@ -11,37 +11,29 @@ export class RegistrationPage {
     // ACCOUNT INFORMATION LOCATORS
     // ============================================================
 
-    this.accountInformationSection =
-      page.getByRole('heading', { name: 'Account & Contact Info' });
+    this.accountInformationSection = page.getByRole('heading', { name: 'Account & Contact Info' });
 
     // FIRST NAME input
-    this.firstNameInput =
-      page.getByRole('textbox', { name: 'First Name' });
+    this.firstNameInput = page.getByRole('textbox', { name: 'First Name' });
 
     // LAST NAME input
     // Confirmed DOM id: lastname
-    this.lastNameInput =
-      page.locator('#lastname');
+    this.lastNameInput = page.locator('#lastname');
 
     // FEDERAL TAX ID (EIN)
-    this.einInput =
-      page.getByRole('textbox', { name: 'Federal Tax ID (EIN)' });
+    this.einInput = page.getByRole('textbox', { name: 'Federal Tax ID (EIN)' });
 
     // COMPANY NAME
-    this.companyNameInput =
-      page.locator('[name="companyname"]');
+    this.companyNameInput = page.locator('[name="companyname"]');
 
     // YEAR IN BUSINESS
-    this.yearInBusinessInput =
-      page.getByLabel('Year in Business');
+    this.yearInBusinessInput = page.getByLabel('Year in Business');
 
     // WEBSITE / SOCIAL MEDIA / PORTFOLIO URL
-    this.websiteInput =
-      page.getByLabel('Website, Social Media, or Portfolio URL');
+    this.websiteInput = page.getByLabel('Website, Social Media, or Portfolio URL');
 
     // BUSINESS TYPE dropdown
-    this.businessTypeSelect =
-      page.getByRole('combobox', { name: 'Business Type' });
+    this.businessTypeSelect = page.getByRole('combobox', { name: 'Business Type' });
 
     // HOW DID YOU HEAR ABOUT US dropdown
     this.hearAboutUsSelect = page.getByRole('combobox', {name: 'How Did You Hear About Us?'});
@@ -50,103 +42,72 @@ export class RegistrationPage {
     this.accountPhoneInput = page.locator('input[name="telephone-mask"]')
 
     // FAX
-    this.faxInput =
-      page.getByRole('textbox', { name: 'Fax' });
+    this.faxInput = page.getByRole('textbox', { name: 'Fax' });
 
     // EMAIL ADDRESS
-    this.emailInput =
-      page.getByRole('textbox', { name: 'Your Email Address' });
+    this.emailInput = page.getByRole('textbox', { name: 'Your Email Address' });
 
     // PASSWORD
-    this.passwordInput =
-      page.getByRole('textbox', {
-        name: 'Create a Personal Password'
-      });
+    this.passwordInput = page.getByRole('textbox', {name: 'Create a Personal Password'});
 
     // CONFIRM PASSWORD
-    this.confirmPasswordInput =
-      page.getByRole('textbox', { name: 'Confirm Password' });
+    this.confirmPasswordInput = page.getByRole('textbox', { name: 'Confirm Password' });
 
     // NEWSLETTER checkbox
-    this.newsletterCheckbox =
-      page.getByRole('checkbox', {
-        name: 'Sign Up for Newsletter'
-      });
+    this.newsletterCheckbox = page.getByRole('checkbox', {name: 'Sign Up for Newsletter'});
 
     // KEEP ME SIGNED IN checkbox
-    this.keepSignedInCheckbox =
-      page.locator('#remember_meKLuHvKC2rU');
+    this.keepSignedInCheckbox = page.locator('#remember_meKLuHvKC2rU');
 
     // CONTINUE button
-    this.continueButton =
-      page.getByRole('button', { name: 'Continue' });
+    this.continueButton = page.getByRole('button', { name: 'Continue' });
 
     // Final CREATE AN ACCOUNT button
-    this.createAccountButton =
-      page.getByRole('button', { name: 'Create an Account' });
+    this.createAccountButton = page.getByRole('button', { name: 'Create an Account' });
 
 
     // ============================================================
     // BILLING INFORMATION LOCATORS
     // ============================================================
 
-    this.billingSection =
-      page.locator(':text-is("Address Information")');
+    this.billingSection = page.locator(':text-is("Address Information")');
 
-    this.billingPhoneInput =
-      page.locator('#telephone_billing');
+    this.billingPhoneInput = page.locator('#telephone_billing');
 
-    this.billingCompanyInput =
-      page.locator('#company');
+    this.billingCompanyInput = page.locator('#company');
 
-    this.billingStreetInput =
-      page.locator('#street_1');
+    this.billingStreetInput = page.locator('#street_1');
 
-    this.billingCityInput =
-      page.locator('#city');
+    this.billingCityInput = page.locator('#city');
 
-    this.billingStateSelect =
-      page.locator('#region_id');
+    this.billingStateSelect = page.locator('#region_id');
 
-    this.billingZipInput =
-      page.locator('#zip');
+    this.billingZipInput = page.locator('#zip');
 
-    this.billingCountrySelect =
-      page.locator('#country');
+    this.billingCountrySelect = page.locator('#country');
 
 
     // ============================================================
     // SHIPPING INFORMATION LOCATORS
     // ============================================================
 
-    this.shippingSection =
-      page.getByRole('heading', {
-        name: 'Shipping Address Information'
-      });
+    this.shippingSection =page.getByRole('heading', {name: 'Shipping Address Information'});
 
-    this.sameAsBillingCheckbox =
-      page.locator('#shipping_same_billing');
+    this.sameAsBillingCheckbox = page.locator('#shipping_same_billing');
 
-    this.shippingPhoneInput =
-      page.locator('#telephone_shipping');
+    this.shippingPhoneInput = page.locator('#telephone_shipping');
 
-    this.shippingCompanyInput =
-      page.locator('#company_shipping');
+    this.shippingCompanyInput = page.locator('#company_shipping');
 
-    this.shippingStreetInput =
-      page.locator('#street_1_shipping');
+    this.shippingStreetInput = page.locator('#street_1_shipping');
 
-    this.shippingCityInput =
-      page.locator('#city_shipping');
+    this.shippingCityInput = page.locator('#city_shipping');
 
-    this.shippingStateSelect =
-      page.locator('#region_id_shipping');
+    this.shippingStateSelect = page.locator('#region_id_shipping');
 
-    this.shippingZipInput =
-      page.locator('#zip_shipping');
+    this.shippingZipInput = page.locator('#zip_shipping');
 
-    this.shippingCountrySelect =
-      page.locator('#country_shipping');
+    this.shippingCountrySelect = page.locator('#country_shipping');
 
 
     // ============================================================
@@ -154,14 +115,10 @@ export class RegistrationPage {
     // ============================================================
 
     this.registrationSuccessTitle =
-      page.getByText(
-        /thank you for registering with accent decor/i
-      );
+      page.getByText(/thank you for registering with accent decor/i);
 
     this.registrationSuccessMessage =
-      page.getByText(
-        /we have received your message/i
-      );
+      page.getByText(/we have received your message/i);
 
 
     // ============================================================
@@ -181,20 +138,16 @@ export class RegistrationPage {
 
   async expectRegistrationPageDisplayed() {
 
-    await expect(this.page)
-      .toHaveURL(/customer\/account\/create/);
+    await expect(this.page).toHaveURL(/customer\/account\/create/);
 
-    await expect(
-      this.accountInformationSection
-    ).toBeVisible();
+    await expect(this.accountInformationSection).toBeVisible();
 
   }
 
 
   async expectRegistrationUrl() {
 
-    await expect(this.page)
-      .toHaveURL(/customer\/account\/create/);
+    await expect(this.page).toHaveURL(/customer\/account\/create/);
 
   }
 
@@ -205,77 +158,39 @@ export class RegistrationPage {
 
   async fillAccountInformation(data) {
 
-    await this.firstNameInput.fill(
-      data.firstName
-    );
+    await this.firstNameInput.fill(data.firstName);
 
 
     // Temporary checks to diagnose the Last Name timeout.
-    await expect(
-      this.lastNameInput
-    ).toBeVisible();
+    await expect(this.lastNameInput).toBeVisible();
 
-    await expect(
-      this.lastNameInput
-    ).toBeEditable();
+    await expect(this.lastNameInput).toBeEditable();
 
-    await this.lastNameInput
-      .scrollIntoViewIfNeeded();
+    await this.lastNameInput.scrollIntoViewIfNeeded();
 
-    await this.lastNameInput.fill(
-      data.lastName
-    );
+    await this.lastNameInput.fill(data.lastName);
 
+    await this.einInput.fill(data.ein);
 
-    await this.einInput.fill(
-      data.ein
-    );
+    await this.companyNameInput.fill(data.companyName);
 
-    await this.companyNameInput.fill(
-      data.companyName
-    );
+    await this.yearInBusinessInput.fill(data.yearInBusiness);
 
-    await this.yearInBusinessInput.fill(
-      data.yearInBusiness
-    );
+    await this.websiteInput.fill(data.website);
 
-    await this.websiteInput.fill(
-      data.website
-    );
+    await this.businessTypeSelect.selectOption({label: data.businessType});
 
-    await this.businessTypeSelect.selectOption({
-      label: data.businessType
-    });
+    await this.hearAboutUsSelect.selectOption({label: data.hearAboutUs});
 
-    await this.hearAboutUsSelect.selectOption({
-      label: data.hearAboutUs
-    });
+    await this.accountPhoneInput.fill(data.phone);
 
-    await this.accountPhoneInput.fill(
-      data.phone
-    );
+    await this.faxInput.fill(data.fax);
 
+    await this.emailInput.fill(data.email);
 
-    if (data.fax) {
+    await this.passwordInput.fill(data.password);
 
-      await this.faxInput.fill(
-        data.fax
-      );
-
-    }
-
-
-    await this.emailInput.fill(
-      data.email
-    );
-
-    await this.passwordInput.fill(
-      data.password
-    );
-
-    await this.confirmPasswordInput.fill(
-      data.password
-    );
+    await this.confirmPasswordInput.fill(data.password);
 
   }
 
@@ -286,33 +201,19 @@ export class RegistrationPage {
 
   async fillBillingInformation(data) {
 
-    await this.billingPhoneInput.fill(
-      data.phone
-    );
+    await this.billingPhoneInput.fill(data.phone);
 
-    await this.billingCompanyInput.fill(
-      data.company
-    );
+    await this.billingCompanyInput.fill(data.company);
 
-   await this.billingStreetInput.fill(
-      data.address
-    );
+   await this.billingStreetInput.fill(data.address);
 
-    await this.billingCityInput.fill(
-      data.city
-    );
+    await this.billingCityInput.fill(data.city);
 
-    await this.billingStateSelect.selectOption({
-      label: data.state
-    });
+    await this.billingStateSelect.selectOption({label: data.state});
 
-    await this.billingZipInput.fill(
-      data.zip
-    );
+    await this.billingZipInput.fill(data.zip);
 
-    await this.billingCountrySelect.selectOption({
-      label: data.country
-    });
+    await this.billingCountrySelect.selectOption({label: data.country});
 
   }
 
@@ -335,33 +236,19 @@ export class RegistrationPage {
     await this.sameAsBillingCheckbox.uncheck();
 
 
-    await this.shippingPhoneInput.fill(
-      data.phone
-    );
+    await this.shippingPhoneInput.fill(data.phone);
 
-    await this.shippingCompanyInput.fill(
-      data.company
-    );
+    await this.shippingCompanyInput.fill(data.company);
 
-    await this.shippingStreetInput.fill(
-      data.address
-    );
+    await this.shippingStreetInput.fill(data.address);
 
-    await this.shippingCityInput.fill(
-      data.city
-    );
+    await this.shippingCityInput.fill(data.city);
 
-    await this.shippingStateSelect.selectOption({
-      label: data.state
-    });
+    await this.shippingStateSelect.selectOption({label: data.state});
 
-    await this.shippingZipInput.fill(
-      data.zip
-    );
+    await this.shippingZipInput.fill(data.zip);
 
-    await this.shippingCountrySelect.selectOption({
-      label: data.country
-    });
+    await this.shippingCountrySelect.selectOption({label: data.country});
 
   }
 
@@ -397,31 +284,23 @@ export class RegistrationPage {
 
   async expectBillingSectionDisplayed() {
 
-    await expect(
-      this.billingSection
-    ).toBeVisible();
+    await expect(this.billingSection).toBeVisible();
 
   }
 
 
   async expectShippingSectionDisplayed() {
 
-    await expect(
-      this.shippingSection
-    ).toBeVisible();
+    await expect(this.shippingSection).toBeVisible();
 
   }
 
 
   async expectRegistrationSuccess() {
 
-    await expect(
-      this.registrationSuccessTitle
-    ).toBeVisible();
+    await expect(this.registrationSuccessTitle).toBeVisible();
 
-    await expect(
-      this.registrationSuccessMessage
-    ).toBeVisible();
+    await expect(this.registrationSuccessMessage).toBeVisible();
 
   }
 
@@ -460,18 +339,13 @@ export class RegistrationPage {
 
   async expectBillingRequiredFieldErrors() {
 
-    await expect(
-      this.requiredFieldErrors.first()
-    ).toBeVisible();
-
+    await expect(this.requiredFieldErrors.first()).toBeVisible();
   }
 
 
   async expectShippingRequiredFieldErrors() {
 
-    await expect(
-      this.requiredFieldErrors.first()
-    ).toBeVisible();
+    await expect(this.requiredFieldErrors.first()).toBeVisible();
 
   }
 
